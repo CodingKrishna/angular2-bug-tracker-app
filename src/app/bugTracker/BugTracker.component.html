@@ -1,0 +1,21 @@
+<div class="content">
+	<bug-stats [list]="bugs"></bug-stats>
+	<section class="sort">
+		<label for="">Order By :</label>
+		<select [(ngModel)]="sortBugBy">
+			<option value="id">[Default]</option>
+			<option value="name">Name</option>
+			<option value="isClosed">Status</option>
+			<option value="createdAt">Created At</option>
+		</select>
+		<label for="">Descending ? :</label>
+		<input type="checkbox" [(ngModel)]="sortBugOrder">
+	</section>
+	<bug-edit (onNewBug)="newBugAdded($event)"></bug-edit>
+	<section class="list">
+		<ol>
+			<bug-item *ngFor="let bug of ( bugs | sort:sortBugBy:sortBugOrder )" [bug]="bug" (onToggle)="bugToggled($event)"></bug-item>
+		</ol>
+		<input type="button" value="Remove Closed" (click)="removeClosed()">
+	</section>
+</div>

@@ -1,0 +1,49 @@
+{
+  "bugs": [
+    {
+      "id": 2,
+      "name": "User actions not recognized",
+      "isClosed": true,
+      "createdAt": "Sat Sep 16 2017 10:03:57 GMT+0530 (IST)"
+    },
+    {
+      "id": 3,
+      "name": "Application is not responsive",
+      "isClosed": true,
+      "createdAt": "Sat Sep 16 2017 10:08:21 GMT+0530 (IST)"
+    },
+    {
+      "id": 4,
+      "name": "Data integrity checks failed",
+      "isClosed": false,
+      "createdAt": "Sat Sep 16 2017 11:25:47 GMT+0530 (IST)"
+    },
+    {
+      "id": 5,
+      "name": "Server communication failure",
+      "isClosed": false,
+      "createdAt": "2017-10-25T10:21:09.081Z"
+    },
+    {
+      "id": 6,
+      "name": "f dsafdasfdas",
+      "isClosed": false
+    },
+    {
+      "id": 7,
+      "name": "aded",
+      "isClosed": false,
+      "createdAt": "2017-10-28T11:30:28.777Z"
+    }
+  ],
+  "projects": [
+    {
+      "id": "P102",
+      "name": "Bug Tracker"
+    },
+    {
+      "id": "P101",
+      "name": "Payroll Management"
+    }
+  ]
+}
